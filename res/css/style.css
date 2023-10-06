@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 * {
@@ -7,7 +8,8 @@
 }
 
 body {
-  background-color: #232323;
+  background: rgb(18,15,26);
+background: radial-gradient(circle, rgba(18,15,26,1) 0%, rgba(46,34,55,1) 100%);
   background-size: cover;
 }
 
@@ -15,19 +17,27 @@ body {
   display: table;
   margin: 0 auto;
   margin-top: 4em;
+  text-align: center;
+  
+  
+  
 }
 
 #cookie {
-  max-width: 200px;
+  max-width: 230px;
   width: 100%;
   display: table;
   margin: 0 auto;
   cursor: pointer;
   transition: .3s ease;
+  border-radius: 25px;
+  margin-top: 50px;
 }
 
 #cookie:hover {
   transform: scale(1.2);
+  outline: 2px solid white;
+  outline-offset: 10px;
 }
 
 #counter {
