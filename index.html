@@ -9,9 +9,11 @@
 
   </head>
   <body>
+    <div class="bg"></div>
+    <h1 style="color: white; font-size: 50px;">Kráter clicker</h1>
     <div id="wrapper">
-      <h1 style="color: white;">Kráter clicker</h1>
-      <img id="cookie" src="./res/img/cookie.png" alt="Cookie" />
+      
+      <img id="cookie" draggable="false" (dragstart)="false;" src="./res/img/cookie.png" alt="Cookie" />
       <p id="counter">kráterů: 0</p>
     </div>
     

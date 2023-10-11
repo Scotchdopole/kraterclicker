@@ -5,18 +5,24 @@
 * {
   font-family: 'VT323', monospace;
   user-select: none;
+  transition: .3s ease-in-out;
 }
 
-body {
+body,html {
   background: rgb(18,15,26);
-background: radial-gradient(circle, rgba(18,15,26,1) 0%, rgba(46,34,55,1) 100%);
+  background: radial-gradient(circle, rgba(18,15,26,1) 0%, rgba(46,34,55,1) 100%);
   background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
 }
 
 #wrapper {
-  display: table;
-  margin: 0 auto;
-  margin-top: 4em;
+  display: block;
+  margin-top: 230px;
   text-align: center;
   
   
@@ -29,15 +35,15 @@ background: radial-gradient(circle, rgba(18,15,26,1) 0%, rgba(46,34,55,1) 100%);
   display: table;
   margin: 0 auto;
   cursor: pointer;
-  transition: .3s ease;
+  transition: .3s ease-in-out;
   border-radius: 25px;
   margin-top: 50px;
+user-select: none;
 }
 
 #cookie:hover {
   transform: scale(1.2);
-  outline: 2px solid white;
-  outline-offset: 10px;
+  transition: .3s ease-in-out;
 }
 
 #counter {
@@ -46,6 +52,7 @@ background: radial-gradient(circle, rgba(18,15,26,1) 0%, rgba(46,34,55,1) 100%);
   color: white;
   transition: .2s ease;
   cursor: pointer;
+  margin-top: 100px;
 }
 
 #counter:hover {
