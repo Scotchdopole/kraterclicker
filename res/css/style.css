@@ -22,7 +22,7 @@ body,html {
 
 #wrapper {
   display: block;
-  margin-top: 230px;
+  margin-top: 130px;
   text-align: center;
   
   
@@ -37,7 +37,7 @@ body,html {
   cursor: pointer;
   transition: .3s ease-in-out;
   border-radius: 25px;
-  margin-top: 50px;
+  margin-top: 0px;
 user-select: none;
 }
 
@@ -57,4 +57,19 @@ user-select: none;
 
 #counter:hover {
   transform: scale(1.1);
+}
+
+#upgrade{
+  width: 200px;
+  background-color: white;
+  color: black;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 20px;
+  border: none;
+}
+
+#upgrade:hover{
+  background-color: black;
+  color: white;
 }

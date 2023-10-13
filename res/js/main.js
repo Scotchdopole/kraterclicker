@@ -1,13 +1,15 @@
 const cookie = document.getElementById("cookie");
 const counter = document.getElementById("counter");
+const upgrade = document.getElementById("upgrade");
 
 
-let scale = false;
 let numberOfCookies = 0;
+let cookieIncrease = 1;
+let upgradePrice = 150;
 
 cookie.onclick = () => {
 
-    numberOfCookies++;
+    numberOfCookies += cookieIncrease;
     counter.innerText = "kráterů: " + numberOfCookies;
 
     cookie.style.transform = "scale(0.8)";
@@ -18,6 +20,23 @@ cookie.onclick = () => {
         cookie.style.borderRadius = "25px";
         
       }, 80);
+
+}
+
+upgrade.onclick = () => {
+
+  if (numberOfCookies >= upgradePrice){
+    cookieIncrease ++;
+    upgradePrice *= 2.5;
+    numberOfCookies -= upgradePrice;
+    upgrade.innerText = "upgrade: " + upgradePrice;
+  }
+
+  upgrade.style.transform = "scale(0.9)"
+  setTimeout(function() {
+
+    upgrade.style.transform = "scale(1)"
+  }, 100);
 }
 
 
