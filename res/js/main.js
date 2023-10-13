@@ -24,13 +24,17 @@ cookie.onclick = () => {
 }
 
 upgrade.onclick = () => {
-
+  
   if (numberOfCookies >= upgradePrice){
     cookieIncrease ++;
-    upgradePrice *= 2.5;
     numberOfCookies -= upgradePrice;
-    upgrade.innerText = "upgrade: " + upgradePrice;
+    upgradePrice *= 2.5;
+
   }
+  Math.round(upgradePrice)
+
+  counter.innerText = "kráterů: " + numberOfCookies;
+  upgrade.innerText = "upgrade: " + upgradePrice;
 
   upgrade.style.transform = "scale(0.9)"
   setTimeout(function() {
